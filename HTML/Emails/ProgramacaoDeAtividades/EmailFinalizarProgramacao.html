@@ -1,0 +1,633 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            body {
+                margin: 0;
+            }
+            table {
+                border-spacing: 0;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            td {
+                padding: 0;
+            }
+            img {
+                border: 0;
+            }
+
+            .centralizar {
+                width: 100%;
+                table-layout: fixed;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                border-spacing: 0;
+                font-family: Segoe UI;
+                background-color: rgb(10,187,152);
+            }
+
+            .email {
+                border-collapse: collapse;
+                width: 60%;
+            }
+
+            .email_head {
+                border-collapse: collapse;
+                background-color: rgb(0,126,122);
+                width: 100%;
+                border: 2px solid rgb(255,255,255);
+                border-bottom: none;
+            }
+
+            .email_head_th_logo {
+                width: 200px;
+            }
+
+            .email_head_title {
+                color: rgb(255,255,255);
+                font-size: 28px;
+                font-weight: 500;
+                width: 400px;
+                padding: 5px;
+            }
+
+            .email_programacao {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            .email_programacao_th,
+            .email_informativo_th {
+                font-size: 16px;
+                font-weight: 500;
+                color: rgb(255,255,255);
+                border: 2px solid rgb(255,255,255);
+                background-color: rgb(0,126,122);
+                padding: 5px;
+            }
+
+            .email_programacao_td {
+                text-align: center;
+                font-size: 14px;
+                background-color: rgb(255,255,255);
+                border: 2px solid rgb(0,126,122);
+                padding: 5px;
+                color: rgb(0,126,122);
+            }
+
+            .email_atividades_title {
+                text-align: center;
+                border-collapse: collapse;
+                background-color: rgb(60,181,229);
+                width: 100%;
+                border: 2px solid rgb(255,255,255);
+                color: rgb(255,255,255);
+                font-size: 28px;
+                font-weight: 500;
+                padding: 5px;
+            }
+            
+            .email_atividades,
+            .email_atividades_tempo_efetivo,
+            .email_atividades_atividadesprevistas,
+            .email_atividades_atividadescriticas_table,
+            .email_atividades_apoio_plantonista,
+            .email_atividades_apoio_plantonista_table,
+            .email_atividades_atividadesprevistas_table,
+            .email_informativo,
+            .email_informativo_dias {
+                border-collapse: collapse;
+                width: 100%;
+                height: 100%;
+            }
+
+            .email_informativo_dias_th {
+                font-size: 16px;
+                font-weight: 500;
+                color: rgb(255,255,255);
+                border: 1px solid rgb(255,255,255);
+                border-top: none;
+                background-color: rgb(0,122,126);
+                padding: 5px;
+            }
+
+            .email_informativo_td,
+            .email_informativo_dias_td {
+                text-align: center;
+                font-size: 14px;
+                background-color: rgb(255,255,255);
+                color: rgb(0,122,126);
+                border: 1px solid rgb(0,122,126);
+                padding: 5px;
+                height: 100%;
+            }
+
+            .email_atividades_th, 
+            .email_atividades_tempo_efetivo_th,
+            .email_atividades_atividadesprevistas_th,
+            .email_atividades_apoio_plantonista_th {
+                font-size: 16px;
+                font-weight: 500;
+                color: rgb(255,255,255);
+                border: 1px solid rgb(255,255,255);
+                border-top: none;
+                background-color: rgb(60,181,229);
+                padding: 5px;
+            }
+
+            .email_atividades_td,
+            .email_atividades_tempo_efetivo_td,
+            .email_atividades_atividadesprevistas_td,
+            .email_atividades_atividadescriticas_td,
+            .email_atividades_apoio_plantonista_td {
+                text-align: center;
+                font-size: 14px;
+                background-color: rgb(255,255,255);
+                color: rgb(60,181,229);
+                border: 1px solid rgb(60,181,229);
+                padding: 5px;
+                height: 100%;
+
+            }
+            
+            .email_atividades_fim {
+                background-color: rgb(237,177,17);
+                height: 20px;
+            }
+        </style>
+</head>
+    <body>
+        <center class="centralizar">
+            <table class="email" >
+                <tr><div style="display: flex; flex-direction: column;"></div>
+                    <th>
+                        <table class="email_head">
+                            <tr>
+                                <th class="email_head_th_logo">
+                                    <img width="100" src="https://raw.githubusercontent.com/SSMAPROJETOS/Images/main/Logos/LogoSSMA.png" alt="">    
+                                </th>
+            
+                                <th class="email_head_title">
+                                    Informações Programação
+                                </th>
+            
+                                <th class="email_head_th_logo">
+                                    <img width="150" src="https://raw.githubusercontent.com/SSMAPROJETOS/Images/main/Logos/Logo%20Vale%20Monocromatico%20Positivo%20Branco.png" alt="">    
+                                </th>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table class="email_programacao">
+                            <tr>
+                                <th class="email_programacao_th" style="width: 25%;">
+                                    ID
+                                </th>
+
+                                <th class="email_programacao_th" style="width: 25%;">
+                                    Início Programação
+                                </th>
+
+                                <th class="email_programacao_th" style="width: 25%;">
+                                    Fim Programação
+                                </th>
+
+                                <th class="email_programacao_th" style="width: 25%;">
+                                    Data Final Resposta
+                                </th>
+                            </tr>
+                            
+                            <tr>
+                                <td class="email_programacao_td">
+                                    c514e675-5949-4476-a870-1d94b42c8c7a
+                                </td>
+
+                                <td class="email_programacao_td">
+                                    10/2/2023
+                                </td>
+
+                                <td class="email_programacao_td">
+                                    10/2/2023
+                                </td>
+
+                                <td class="email_programacao_td">
+                                    10/2/2023 4:30 PM
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <table class="email_informativo">
+                            <tr>
+                                <th class="email_informativo_th" style="width: 50%;">
+                                    Dias Programados
+                                </th>
+
+                                <th class="email_informativo_th" style="width: 50%;">
+                                    Observações
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <table class="email_informativo_dias">
+                                        <tr>
+                                            <th class="email_informativo_dias_th" style="width: 34%;">
+                                                Dia
+                                            </th>
+
+                                            <th class="email_informativo_dias_th" style="width: 33%;">
+                                                Atividades
+                                            </th>
+
+                                            <th class="email_informativo_dias_th" style="width: 33%;">
+                                                Efetivo
+                                            </th>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="email_informativo_dias_td">
+                                                10/10/2023
+                                            </td>
+
+                                            <td class="email_informativo_dias_td">
+                                                3
+                                            </td>
+
+                                            <td class="email_informativo_dias_td">
+                                                343
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="email_informativo_dias_td">
+                                                10/10/2023
+                                            </td>
+
+                                            <td class="email_informativo_dias_td">
+                                                3
+                                            </td>
+
+                                            <td class="email_informativo_dias_td">
+                                                343
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td class="email_informativo_dias_td">
+                                                10/10/2023
+                                            </td>
+
+                                            <td class="email_informativo_dias_td">
+                                                3
+                                            </td>
+
+                                            <td class="email_informativo_dias_td">
+                                                343
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="email_informativo_dias_td">
+                                                Total
+                                            </td>
+
+                                            <td class="email_informativo_dias_td">
+                                                9
+                                            </td>
+
+                                            <td class="email_informativo_dias_td">
+                                                1.029
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+
+                                <td class="email_informativo_td">
+                                    • Previsão do tempo em anexo •
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="email_atividades_title">
+                        Atividades programadas
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table class="email_atividades">
+                            <tr>
+                                <th class= "email_atividades_th" style="width: 30%;">
+                                    ID
+                                </th>
+                                
+                                <th class= "email_atividades_th" style="width: 30%;">
+                                    Contrato
+                                </th>
+
+                                <th class= "email_atividades_th" style="width: 20%;">
+                                    Área
+                                </th>
+
+                                <th class= "email_atividades_th" style="width: 20%;">
+                                    Descrição Área
+                                </th>
+
+                            </tr>
+
+                            <tr>
+                                <td class= "email_atividades_td">
+                                    4b0384c9-7de3-4e9b-ad39-f4289e6acfb5
+                                </td>
+                                
+                                <td class= "email_atividades_td">
+                                    MCA | SSMA Vix Fiscalização | 5900099032
+                                </td>
+
+                                <td class= "email_atividades_td">
+                                    Ricardo Ballvé
+                                </td>
+
+                                <td class= "email_atividades_td">
+                                    Primeiro andar setor C24
+                                </td>
+
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table class="email_atividades_tempo_efetivo">
+                            <tr>
+                                <th class="email_atividades_tempo_efetivo_th" style="width: 30%;">
+                                    Início da Atividade
+                                </th>
+                                
+                                <th class="email_atividades_tempo_efetivo_th" style="width: 30%;">
+                                    Fim da Atividade
+                                </th>
+
+                                <th class="email_atividades_tempo_efetivo_th" style="width: 10%;">   
+                                    MOD
+                                </th>
+
+                                <th class="email_atividades_tempo_efetivo_th" style="width: 10%;">
+                                    MOI
+                                </th>
+
+                                <th class="email_atividades_tempo_efetivo_th" style="width: 10%;">
+                                    Total
+                                </th>
+
+                                <th class="email_atividades_tempo_efetivo_th" style="width: 10%;">
+                                    Almoço
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <td class="email_atividades_tempo_efetivo_td">
+                                    10/2/2023 01:05h
+                                </td>
+                                
+                                <td class="email_atividades_tempo_efetivo_td">
+                                    10/2/2023 00:00h
+                                </td>
+
+                                <td class="email_atividades_tempo_efetivo_td">   
+                                    1213
+                                </td>
+
+                                <td class="email_atividades_tempo_efetivo_td">
+                                    123
+                                </td>
+
+                                <td class="email_atividades_tempo_efetivo_td">
+                                    1336
+                                </td>
+
+                                <td class="email_atividades_tempo_efetivo_td">
+                                    Usina 8
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table class="email_atividades_atividadesprevistas">
+                            <tr>
+                                <th class="email_atividades_atividadesprevistas_th" style="width: 60%;">
+                                    Atividades Previstas
+                                </th>
+
+                                <th class="email_atividades_atividadesprevistas_th" style="width: 40%;">
+                                    Atividades Críticas
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <table class="email_atividades_atividadesprevistas_table">
+                                        <tr>
+                                            <td class="email_atividades_atividadesprevistas_td">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum enim error, dicta explicabo veniam exercitationem et eveniet tempora, molestias voluptatum corporis adipisci deserunt quam optio pariatur magni consequuntur temporibus earum!
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+
+                                <td>
+                                    <table class="email_atividades_atividadescriticas_table">
+                                        <tr>
+                                            <td class="email_atividades_atividadescriticas_td">
+                                                Lorem ipsum, dolor sit amet.
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="email_atividades_atividadescriticas_td">
+                                                consectetur adipisicing elit. 
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="email_atividades_atividadescriticas_td">
+                                                Voluptatibus, ducimus libero! 
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td class="email_atividades_atividadescriticas_td">
+                                                Repudiandae pariatur ratione fugit
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table class="email_atividades_apoio_plantonista">
+                            <tr>
+                                <th class="email_atividades_apoio_plantonista_th" style="width: 25%;">
+                                    Contatos Apoio
+                                </th>
+
+                                <th class="email_atividades_apoio_plantonista_th" style="width: 25%;">
+                                    Plantonistas Vale
+                                </th>
+
+                                <th class="email_atividades_apoio_plantonista_th" style="width: 25%;">
+                                    Plantonistas MCA
+                                </th>
+
+                                <th class="email_atividades_apoio_plantonista_th" style="width: 25%;">
+                                    Plantonistas SERENG
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <table class="email_atividades_apoio_plantonista_table">
+                                        <tr>
+                                            <td class="email_atividades_apoio_plantonista_td">
+                                                Caio Covre Pascoal
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="email_atividades_apoio_plantonista_td">
+                                                Neymar Filho
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="email_atividades_apoio_plantonista_td">
+                                                Ricardo Paschoal
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="email_atividades_apoio_plantonista_td">
+                                                Elon Musk
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+
+                                <td>
+                                    <table class="email_atividades_apoio_plantonista_table">
+                                        <tr>
+                                            <td class="email_atividades_apoio_plantonista_td">
+                                                Caio Covre Pascoal
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="email_atividades_apoio_plantonista_td">
+                                                Neymar Filho
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="email_atividades_apoio_plantonista_td">
+                                                Ricardo Paschoal
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="email_atividades_apoio_plantonista_td">
+                                                Elon Musk
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+
+                                <td>
+                                    <table class="email_atividades_apoio_plantonista_table">
+                                        <tr>
+                                            <td class="email_atividades_apoio_plantonista_td">
+                                                Caio Covre Pascoal
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="email_atividades_apoio_plantonista_td">
+                                                Neymar Filho
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="email_atividades_apoio_plantonista_td">
+                                                Ricardo Paschoal
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="email_atividades_apoio_plantonista_td">
+                                                Elon Musk
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+
+                                <td>
+                                    <table class="email_atividades_apoio_plantonista_table">
+                                        <tr>
+                                            <td class="email_atividades_apoio_plantonista_td">
+                                                Caio Covre Pascoal
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="email_atividades_apoio_plantonista_td">
+                                                Neymar Filho
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="email_atividades_apoio_plantonista_td">
+                                                Ricardo Paschoal
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="email_atividades_apoio_plantonista_td">
+                                                Elon Musk
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td  class="email_atividades_fim"></td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>

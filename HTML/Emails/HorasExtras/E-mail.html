@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                font-family: 'Segoe UI';
+            }
+
+            .Email-Head {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0;
+                border-bottom: 2px dashed rgb(0,122,126);
+            }
+
+            .LogoVale, .LogoSSMA {
+                width: 120px;
+            }
+
+            .LogoVale {
+                padding-left: 10px;
+            }
+
+            .LogoSSMA {
+                padding-right: 10px;
+            }
+
+            .Email-Head-title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                font-size: 24px;
+                font-weight: 600;
+            }
+            
+            .Email-SubHead {
+                margin-top: 5px;
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                padding-bottom: 5px;
+                border-bottom: 2px dashed rgb(0,122,126);
+                
+            }
+
+            .Email-SubHead-IDSolicitacao, 
+            .Email-SubHead-DataSolicitacao,
+            .Email-SubHead-Solicitante {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .Email-SubHead-IDSolicitacao-Title, 
+            .Email-SubHead-DataSolicitacao-Title,
+            .Email-SubHead-Solicitante-Title {
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            .Email-Body {
+                display: grid;
+                grid-template-columns: 1fr 3fr;
+            }
+
+            .Email-Body-Info-Colaborador {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border: 2px dashed rgb(0,122,126);
+                border-top: none;
+                padding: 10px;
+            }
+
+            .Email-Body-Info-Colaborador-Nome  {
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
+
+            .Email-Body-Info-Colaborador-Foto {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-bottom: 5px;
+            }
+
+            .Email-Body-Info-Colaborador-Foto-Picture {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                object-position: end;
+                border-radius: 10%;
+            }
+
+            .Email-Body-Info-Colaborador-Foto-Info {
+                font-size: 12px;
+            }
+
+            .Email-Body-Info-Colaborador-DataHora {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+            }
+
+            .Email-Body-Info-Colaborador-DataHora-Inicio,
+            .Email-Body-Info-Colaborador-DataHora-Fim {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-bottom: 5px;
+            }
+
+            .Email-Body-Info-Colaborador-DataHora-Inicio-Title,
+            .Email-Body-Info-Colaborador-DataHora-Fim-Title {
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            .Email-Body-Info-Colaborador-DataHora-Inicio-Info,
+            .Email-Body-Info-Colaborador-DataHora-Fim-Info {
+                font-size: 12px;
+            }
+
+            .Email-Body-Info-Colaborador-Descricao {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+            }
+
+            .Email-Body-Info-Colaborador-Descricao-Title {
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            .Email-Body-Info-Colaborador-Descricao-Info {
+                font-size: 12px;
+                text-align: center;
+            }
+
+            .Email-Body-Info-Areas {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                flex-direction: column;
+                border: 2px dashed rgb(0,122,126);
+                border-top: none;
+                border-left: none;
+            }
+
+            .Email-Body-Info-Areas-Grid {
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                width: 100%;
+            }
+
+            .Email-Body-Info-Areas-Title {
+                font-size: 14px;
+                font-weight: 600;
+                text-align: center;
+                border: 1px solid gray;
+                padding: 5px;
+
+            }
+
+            .Email-Body-Info-Areas-Info {
+                font-size: 12px;
+                text-align: center;
+                border: 1px solid gray;
+                padding: 5px;
+
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="Email-Head">
+            <div>
+                <img class="LogoVale" src="https://raw.githubusercontent.com/SSMAPROJETOS/Images/main/Logos/Vale.png">
+            </div>
+
+            <div class="Email-Head-title">
+                Solicitação de Horas Extras 
+            </div>
+            
+            <div>
+                <img class="LogoSSMA" src="https://raw.githubusercontent.com/SSMAPROJETOS/Images/main/Logos/SSMA.png">
+            </div>
+        </div>
+
+        <div class="Email-SubHead">
+            <div class="Email-SubHead-IDSolicitacao">
+                <div class="Email-SubHead-IDSolicitacao-Title">
+                    ID da Solicitacao
+                </div>
+
+                <div class="Email-SubHead-IDSolicitacao-Content">
+                    4858a10f-ecac-4a32-8343-41f22abdb24d
+                </div>
+            </div>
+
+            <div class="Email-SubHead-DataSolicitacao">
+                <div class="Email-SubHead-DataSolicitacao-Title">
+                    Data Inicial
+                </div>
+
+                <div class="Email-SubHead-DataSolicitacao-Content">
+                    26/07/2023
+                </div>
+            </div>
+
+            <div class="Email-SubHead-DataSolicitacao">
+                <div class="Email-SubHead-DataSolicitacao-Title">
+                    Data Final
+                </div>
+
+                <div class="Email-SubHead-DataSolicitacao-Content">
+                    26/07/2023
+                </div>
+            </div>
+
+            <div class="Email-SubHead-Solicitante">
+                <div class="Email-SubHead-Solicitante-Title">
+                    Solicitante
+                </div>
+
+                <div class="Email-SubHead-Solicitante-Content">
+                    Caio Covre Pascoal
+                </div>
+            </div>
+        </div>
+
+        <div class="Email-Body">
+            <div class="Email-Body-Info-Colaborador">
+                <div class="Email-Body-Info-Colaborador-Nome">
+                    Cássio Roberto Ramos
+                </div>
+
+                <div class="Email-Body-Info-Colaborador-Foto">
+                    <img 
+                        class="Email-Body-Info-Colaborador-Foto-Picture" 
+                        src="https://th.bing.com/th/id/R.7d0fc045213b84cbe317bef625fa8081?rik=j58L0YWc8TtfnA&pid=ImgRaw&r=0"
+                    >
+
+                    <div class="Email-Body-Info-Colaborador-Foto-Info">
+                        Foto Colaborador(a)
+                    </div>
+                </div>
+
+                <div class="Email-Body-Info-Colaborador-DataHora">
+                    <div class="Email-Body-Info-Colaborador-DataHora-Inicio">
+                        <div class="Email-Body-Info-Colaborador-DataHora-Inicio-Title">
+                            Data Inicio
+                        </div>
+
+                        <div class="Email-Body-Info-Colaborador-DataHora-Inicio-Info">
+                            26/07/2023 | 7:00h
+                        </div>
+                    </div>
+
+                    <div class="Email-Body-Info-Colaborador-DataHora-Fim">
+                        <div class="Email-Body-Info-Colaborador-DataHora-Fim-Title">
+                            Data Fim
+                        </div>
+
+                        <div class="Email-Body-Info-Colaborador-DataHora-Fim-Info">
+                            26/07/2023 | 16:30h
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Email-Body-Info-Colaborador-Descricao">
+                    <div class="Email-Body-Info-Colaborador-Descricao-Title">
+                        Descrição
+                    </div>
+
+                    <div class="Email-Body-Info-Colaborador-Descricao-Info">
+                        Cássio Roberto Ramos, mais conhecido como Cássio, é um jogador de futebol brasileiro que atua como goleiro. Ele nasceu em 6 de junho de 1987 em Veranópolis, Rio Grande do Sul, Brasil1. Atualmente, ele joga pelo clube de futebol Corinthians1. Ele começou sua carreira no Grêmio e foi rapidamente promovido para o time principal. Depois de jogar por clubes europeus como PSV Eindhoven e Sparta Rotterdam, ele voltou ao Brasil e se juntou ao Corinthians em 20121.
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="Email-Body-Info-Areas">
+                <div class="Email-Body-Info-Areas-Grid">
+                    <div class="Email-Body-Info-Areas-Title">
+                        Empresa | Projeto
+                    </div>
+
+                    <div class="Email-Body-Info-Areas-Title">
+                        Área
+                    </div>
+
+                    <div class="Email-Body-Info-Areas-Title">
+                        Tipo Área
+                    </div>
+
+                    <div class="Email-Body-Info-Areas-Title">
+                        Efetivo
+                    </div>
+                </div>
+
+                <div class="Email-Body-Info-Areas-Grid">
+                    <div class="Email-Body-Info-Areas-Info">
+                        ALLONDA | Sistema de Abastecimento e Aspersão das Máquinas
+                    </div>
+
+                    <div class="Email-Body-Info-Areas-Info">
+                        Canteiro central no TPM
+                    </div>
+
+                    <div class="Email-Body-Info-Areas-Info">
+                        Canteiro Central
+                    </div>
+
+                    <div class="Email-Body-Info-Areas-Info">
+                        20
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

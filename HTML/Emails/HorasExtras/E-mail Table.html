@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <style>
+            .Email-SubHead-IDSolicitacao-Table, 
+            .Email-SubHead-DataSolicitacao-Table,
+            .Email-SubHead-Solicitante-Table {
+                margin:auto;
+            }
+
+            .Email-SubHead-IDSolicitacao-Table-Title, 
+            .Email-SubHead-DataSolicitacao-Table-Title,
+            .Email-SubHead-Solicitante-Table-Title {
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            .Email-Body {
+                border: 2px dashed rgb(0,122,126);
+                border-top: none;
+            }
+
+            .Email-Body-Colaborador {
+                margin: auto;
+            }
+
+            .Email-Body-Colaborador-Info-Colaborador-Nome  {
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
+
+            .Email-Body-td {
+                border-right: 2px dashed rgb(0,122,126);
+            }
+
+            .Email-Body-Colaborador-Info-Colaborador-Foto {
+                margin: auto;
+            }
+
+            .Email-Body-Colaborador-Info-Colaborador-Foto-Picture {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                object-position: end;
+                border-radius: 10%;
+            }
+
+            .Email-Body-Colaborador-Info-Colaborador-Foto-Info {
+                font-size: 12px;
+                text-align: center;
+            }
+
+            .Email-Body-Colaborador-Info-Colaborador-DataHora {
+                margin: auto;
+            }
+
+            .Email-SubHead-DataSolicitacao-Title {
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            .Email-SubHead-DataSolicitacao-Content {
+                font-size: 12px;
+                text-align: center;
+            }
+
+            .Email-Body-Colaborador-Info-Colaborador-Descricao {
+                margin: auto;
+
+            }
+
+            .Email-Body-Colaborador-Info-Colaborador-Descricao-Title {
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            .Email-Body-Colaborador-Info-Colaborador-Descricao-Info {
+                font-size: 12px;
+                text-align: center;
+            }
+
+            .Email-Body-Info-Areas {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            
+            .Email-Body-Info {
+                vertical-align: sub;
+            }
+
+            .Email-Body-Info-Areas {
+                align-items: start;
+                text-align: center;
+                margin: auto;
+            }
+
+            .Email-Body-Info-Areas-Title {
+                font-size: 14px;
+                font-weight: 600;
+                border: 2px solid rgb(0,122,126);
+            }
+
+            .Email-Body-Info-Areas-Info {
+                font-size: 12px;
+                text-align: center;
+                border: 1px solid rgb(0,122,126);
+            }
+
+            .Email-Foot-table_LinkAPP {
+                margin: auto;
+                border: 1px solid rgb(255,255,255);
+                padding: 5px;
+                border-radius: 5px;
+                margin-top: 10px;
+                background-color: rgb(0,122,126);
+                color: rgb(255,255,255);
+                box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+            }
+
+            .Email-Foot-a_LinkAPP {
+                text-decoration: none;
+                color: rgb(255,255,255);
+            }
+
+        </style>
+    </head>
+
+    <body
+        style="
+            font-family: 'Segoe UI';
+        "
+    >
+        <table
+            style="
+                border-collapse: collapse;
+                width: 100%;
+            "
+        >
+            <thead 
+                style="
+                    margin:auto;
+                    margin: 0;
+                    border-bottom: 2px dashed rgb(0,122,126);
+                "
+            >
+                <th>
+                    <img 
+                        style="
+                            padding-left: 10px;
+                        "
+                        width="120"
+                        height="auto"
+                        src="https://raw.githubusercontent.com/SSMAPROJETOS/Images/main/Logos/Vale.png"
+                    >
+                </th>
+
+                <th 
+                    style="
+                        margin:auto;
+                        font-size: 24px;
+                        font-weight: 600;
+                    "
+                    colspan="2" 
+                >
+                    Solicitação de Horas Extras 
+                </th>
+
+                <th>
+                    <img
+                        style="
+                            padding-right: 10px;
+                        "
+                        width="120"
+                        height="auto"
+                        src="https://raw.githubusercontent.com/SSMAPROJETOS/Images/main/Logos/SSMA.png"
+                    >
+                </th>
+            </thead>
+
+            <tbody>
+                <tr
+                    style="
+                        margin-top: 5px;
+                        padding-bottom: 5px;
+                        border-bottom: 2px dashed rgb(0,122,126);
+                        margin:auto;
+                    "
+                >
+                    <td
+                        style="
+                            width: 1px;
+                        "
+                    >
+                        <table
+                            style="
+                                margin:auto
+                            "
+                        >
+                            <tr>
+                                <th class="Email-SubHead-IDSolicitacao-Table-Title">
+                                    ID da Solicitacao
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <td class="Email-SubHead-IDSolicitacao-Table-Content">   
+                                    4858a10f-ecac-4a32-8343-41f22abdb24d
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                    <td
+                        style="
+                            width: 1px;
+                        "
+                    >
+                        <table
+                            style="
+                                margin:auto
+                            "
+                        >
+                            <tr>
+                                <th class="Email-SubHead-DataSolicitacao-Table-Title">
+                                    Data Inicial
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <td class="Email-SubHead-DataSolicitacao-Table-Content">   
+                                    26/07/2023
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                    <td
+                        style="
+                            width: 1px;
+                        "
+                    >
+                        <table
+                            style="
+                                margin:auto
+                            "
+                        >
+                            <tr>
+                                <th class="Email-SubHead-DataSolicitacao-Table-Title">
+                                    Data Final
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <td class="Email-SubHead-DataSolicitacao-Table-Content">   
+                                    26/07/2023
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                    <td 
+                        style="
+                            width: 1px;
+                        "
+                    >
+                        <table 
+                            style="
+                                margin:auto
+                            "
+                        >
+                            <tr>
+                                <th class="Email-SubHead-Solicitante-Table-Title">
+                                    Solicitante
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <td class="Email-SubHead-Solicitante-Table-Content">   
+                                    Caio Covre Pascoal
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr class="Email-Body">
+                    <td class="Email-Body-td">
+                        <table class="Email-Body-Colaborador">
+                            <Tr>
+                                <th class="Email-Body-Colaborador-Info-Colaborador-Nome">
+                                    Cássio Roberto Ramos
+                                </th>
+                            </Tr>
+
+                            <tr>
+                                <td>
+                                    <table class="Email-Body-Colaborador-Info-Colaborador-Foto">
+                                        <tr>
+                                            <td>
+                                                <img 
+                                                    class="Email-Body-Colaborador-Info-Colaborador-Foto-Picture" 
+                                                    width="200"
+                                                    height="auto"
+                                                    src="https://th.bing.com/th/id/R.7d0fc045213b84cbe317bef625fa8081?rik=j58L0YWc8TtfnA&pid=ImgRaw&r=0"
+                                                >
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="Email-Body-Colaborador-Info-Colaborador-Foto-Info">
+                                    foto Colaborador(a)
+                                </td>
+                            </tr>
+
+                            <tr>  
+                                <td>
+                                    <table class="Email-Body-Colaborador-Info-Colaborador-DataHora">
+                                        <tr>
+                                            <th class="Email-SubHead-DataSolicitacao-Title">
+                                                Data Inicial
+                                            </th>
+
+                                            <th class="Email-SubHead-DataSolicitacao-Title">
+                                                Data Final
+                                            </th>
+                                        </tr>
+
+                                        <Tr>
+                                            <td class="Email-SubHead-DataSolicitacao-Content">
+                                                26/07/2023
+                                            </td>
+
+                                            <td class="Email-SubHead-DataSolicitacao-Content">
+                                                26/07/2023
+                                            </td>
+                                        </Tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <table class="Email-Body-Colaborador-Info-Colaborador-Descricao">
+                                        <tr>
+                                            <th class="Email-Body-Colaborador-Info-Colaborador-Descricao-Title">
+                                                Descrição
+                                            </th>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="Email-Body-Colaborador-Info-Colaborador-Descricao-Info">
+                                                Cássio Roberto Ramos, mais conhecido como Cássio, é um jogador de futebol brasileiro que atua como goleiro. Ele nasceu em 6 de junho de 1987 em Veranópolis, Rio Grande do Sul, Brasil1. Atualmente, ele joga pelo clube de futebol Corinthians1. Ele começou sua carreira no Grêmio e foi rapidamente promovido para o time principal. Depois de jogar por clubes europeus como PSV Eindhoven e Sparta Rotterdam, ele voltou ao Brasil e se juntou ao Corinthians em 20121.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                    <td class="Email-Body-Info", colspan="3">
+                        <table class="Email-Body-Info-Areas">
+                            <tr>
+                                <th class="Email-Body-Info-Areas-Title">
+                                    Empresa | Projeto
+                                </th>
+
+                                <th class="Email-Body-Info-Areas-Title">
+                                    Área
+                                </th>
+
+                                <th class="Email-Body-Info-Areas-Title">
+                                    Tipo Área
+                                </th>
+
+                                <th class="Email-Body-Info-Areas-Title">    
+                                    Efetivo
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <td class="Email-Body-Info-Areas-Info">
+                                    ALLONDA | Sistema de Abastecimento e Aspersão das Máquinas
+                                </td>
+
+                                <td class="Email-Body-Info-Areas-Info">
+                                    Canteiro central no TPM
+                                </td>
+
+                                <td class="Email-Body-Info-Areas-Info">
+                                    Canteiro Central
+                                </td>
+
+                                <td class="Email-Body-Info-Areas-Info">
+                                    20
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr class="Email-Foot">
+                    <td class="Email-Foot-td_LinkAPP" colspan="4">
+                        <table class="Email-Foot-table_LinkAPP">
+                            <tr>
+                                <td>
+                                    <a class="Email-Foot-a_LinkAPP" href="https://apps.powerapps.com/play/e/default-7893571b-6c2c-4cef-b4da-7d4b266a0626/a/10164108-5de8-4307-acb4-46f477f3fb7e?tenantId=7893571b-6c2c-4cef-b4da-7d4b266a0626"> Acessar Aplicativo </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
